@@ -9,49 +9,52 @@
 <body>
 
     <header>
-        <h1>גן החיות התנ"כי</h1>
-        <p>הבית של החיות מכל העולם</p>
+        <div class="logo">
+            <a href="main_page.html"><img src="../images/logo.svg" alt="לוגו גן החיות"></a>
+        </div>
         
         <nav>
             <ul>
-                <li><a href="main_page.html">דף הבית ורכישת כרטיסים</a></li>
-                <li><a href="articles.html">כתבות על החיות</a></li>
+                <li><a href="main_page.html">רכישת כרטיסים</a></li>
+                <li><a href="articles.html">כתבות</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>כתבות ומאמרים על בעלי החיים</h2>
-        <p>מוזמנים לקרוא ולגלות עובדות מרתקות על בעלי החיים שגרים בגן החיות שלנו ועל דרכי הטיפול בהם.</p>
+    <main class="articles-page">
+        <div class="articles-header">
+            <h2>כתבות ומאמרים על בעלי החיים</h2>
+            <p>מוזמנים לקרוא ולגלות עובדות מרתקות על בעלי החיים שגרים בגן החיות שלנו ועל דרכי הטיפול בהם.</p>
+        </div>
         
-        <hr>
+        <div class="articles-container">
+            <article class="article-card-main">
+                <img src="../images/panda.jpg" alt="פנדה">
+                <div class="article-content">
+                    <h3 id="panda">החיים הנסתרים של הפנדות</h3>
+                    <p>גלו איך פנדות מעבירות את רוב היום שלהן באכילת באמבו ובשינה, ומה עושים צוות המטפלים כדי לספק להן סביבה עשירה ומעניינת...</p>
+                    <a href="panda_article.html" class="read-more-btn">לקריאת הכתבה המלאה</a>
+                </div>
+            </article>
 
-        <article class="article-card">
-            <img src="../images/panda.jpg" alt="פנדה">
-            <div>
-                <h3 id="panda">החיים הנסתרים של הפנדות</h3>
-                <p>גלו איך פנדות מעבירות את רוב היום שלהן באכילת באמבו ובשינה, ומה עושים צוות המטפלים כדי לספק להן סביבה עשירה ומעניינת...</p>
-                <a href="panda_article.html">לקריאת הכתבה המלאה</a>
-            </div>
-        </article>
+            <article class="article-card-main">
+                <img src="../images/bar_animals.jpg" alt="חיות בר בחורף">
+                <div class="article-content">
+                    <h3 id="winter">איך שומרים על חיות הבר בחורף?</h3>
+                    <p>הציצו אל מאחורי הקלעים וגלו כיצד מטפלים, מחממים ודואגים לתזונה מותאמת של בעלי החיים בימים הקרים של השנה...</p>
+                    <a href="winter_article.html" class="read-more-btn">לקריאת הכתבה המלאה</a>
+                </div>
+            </article>
 
-        <article class="article-card">
-            <img src="../images/bar_animals.jpg" alt="חיות בר בחורף">
-            <div>
-                <h3 id="winter">איך שומרים על חיות הבר בחורף?</h3>
-                <p>הציצו אל מאחורי הקלעים וגלו כיצד מטפלים, מחממים ודואגים לתזונה מותאמת של בעלי החיים בימים הקרים של השנה...</p>
-                <a href="winter_article.html">לקריאת הכתבה המלאה</a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <img src="../images/lions.jpg" alt="אריות וטורפים">
-            <div>
-                <h3 id="predators">מלכי הסוואה: הצצה לעולם הטורפים</h3>
-                <p>הכירו מקרוב את האריות והנמרים בגן החיות, למדו על הרגלי הציד שלהם וכיצד צוות המטפלים דואגים לאתגר אותם מנטלית ופיזית...</p>
-                <a href="predators_article.html">לקריאת הכתבה המלאה</a>
-            </div>
-        </article>
+            <article class="article-card-main">
+                <img src="../images/lions.jpg" alt="אריות וטורפים">
+                <div class="article-content">
+                    <h3 id="predators">מלכי הסוואה: הצצה לעולם הטורפים</h3>
+                    <p>הכירו מקרוב את האריות והנמרים בגן החיות, למדו על הרגלי הציד שלהם וכיצד צוות המטפלים דואגים לאתגר אותם מנטלית ופיזית...</p>
+                    <a href="predators_article.html" class="read-more-btn">לקריאת הכתבה המלאה</a>
+                </div>
+            </article>
+        </div>
     </main>
 
     <footer>

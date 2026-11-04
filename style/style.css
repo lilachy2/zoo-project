@@ -1,4 +1,3 @@
-/* עיצוב כללי לאתר */
 body {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -11,9 +10,15 @@ body {
     direction: rtl;
 }
 
-/*============================CSS of header=================================*/
+h1, h2, h3, h4 {
+    color: #4A2E1B;
+    font-family: 'Georgia', 'Rubik', serif;
+    margin-top: 0;
+}
+
 header {
-    background-color: #a7df96;
+    background-color: #5a3825b7;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid #8ab87c;
@@ -24,49 +29,55 @@ header {
 }
 
 .logo {
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
-    align-items: flex-end;
-    gap: 15px;
-    /* יוצר רווח נעים בין הלוגו לטקסט הטחון */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .logo img {
     height: 50px;
-    /* הגבלה חכמה לגובה הלוגו כדי שלא יהיה ענק מדי */
     width: auto;
 }
 
 .logo p {
-
-    font-weight: bold;
-    color: hsl(42, 81%, 44%);
-    /* טקסט כהה ויפה על רקע ירוק בהיר */
+    color: #F3E5AB;
+    margin: 0;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    align-items: center;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #0066cc;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 6px;
     font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #ffffff;
+    color: #5A3825;
+    border-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/*===========================================================================*/
-
-
-/* מבנה 2 עמודות לעמוד הבית */
 .grid-container {
     display: grid;
     grid-template-columns: 3.5fr 1fr;
@@ -74,7 +85,6 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-/* עמודות צד (Aside) */
 aside {
     border: 1px solid #ccc;
     padding: 15px;
@@ -82,11 +92,6 @@ aside {
     background-color: #fff;
 }
 
-aside:first-of-type {
-    border: 2px solid #333;
-}
-
-/* העמודה האמצעית (Main) */
 main {
     display: flex;
     flex-direction: column;
@@ -94,141 +99,137 @@ main {
 }
 
 main section {
+    border: 1px solid #ccc;
     background-color: #ffffff;
     padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-
-/* 3. אזור המחירון (Price) - ניתן לו נפח קטן יותר ככרטיס צד */
 .price {
+    border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .tickets {
-    padding: 2rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
-
-/* מעטפת הטופס הכללית */
 .ticket-form {
     margin: 0 auto;
-    padding: 2.5rem;
-    text-align: right; /* התאמה לעברית */
+    padding: 0.5rem;
+    text-align: right;
 }
+
 .ticket-form .input-fields {
     background-color: transparent;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 טורים שווים */
-    gap: 16px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 12px;
 }
+
 .ticket-form .grid-form {
     display: flex;
     flex-direction: column;
 }
 
-/* כותרות קטנות בתוך הטופס (כמו הנחות וניוזלייטר) */
 .ticket-form .section-title {
     font-weight: bold;
     color: #004B3E;
-    margin-bottom: 8px;
-}
-.ticket-form .checkbox-group div {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
-/* עיצוב התגיות (Labels) */
+.ticket-form .checkbox-group div {
+    margin-bottom: 3px;
+}
+
 label {
     font-weight: 600;
     color: #333333;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
-/* עיצוב אחיד לכל שדות הקלט והמספרים */
 input[type="text"],
 input[type="tel"],
 input[type="number"],
 input[type="email"] {
     width: 100%;
-    padding: 10px 14px;
-    margin: 6px 0px;
+    padding: 6px 10px;
+    margin: 3px 0px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    box-sizing: border-box; /* מונע חריגה ברוחב */
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
     background-color: #fcfbfa;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* הדגשה עדינה כשלוחצים על שדה */
 input:focus {
     outline: none;
-    border-color: #004B3E; /* ירוק כהה ראשי */
+    border-color: #004B3E;
     box-shadow: 0 0 0 3px rgba(0, 75, 62, 0.1);
 }
+
 input[type="checkbox"] {
     margin-left: 8px;
     cursor: pointer;
 }
 
-/* עיצוב כפתור השליחה (Submit) */
 input[type="submit"] {
     width: 100%;
-    background-color: #B4D738; /* ירוק בהיר/ליים */
-    color: #222222;
-    padding: 12px;
+    background-color: #5a3825b7;
+    color: white;
+    padding: 8px;
     border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 15px;
+    margin-top: 8px;
 }
+
 input[type="submit"]:hover {
-    background-color: #9ec02c; /* כהה יותר בהובר */
+    background-color: #5a3825d4;
 }
 
-/* 5. עיצוב טבלת המחירים שבתוך ה-Price */
-
-/*===================================== table ====================================*/
 .price table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .price th,
 .price td {
-    padding: 10px;
+    padding: 6px;
     text-align: right;
     border-bottom: 1px solid #eee;
+    font-size: 0.85rem;
 }
 
 .price th {
     background-color: #004B3E;
     color: #fff;
 }
-/*==================================================================*/
 
 .subscription-note {
-    background-color: #f1eee0; /* צבע רקע רך ונעים (פרגמנט) */
+    background-color: #f1eee0;
     padding: 1.5rem;
     border-radius: 12px;
     margin-top: 25px;
-    border-right: 5px solid #004B3E; /* פס הדגשה ירוק כהה מימין */
+    border-right: 5px solid #004B3E;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .subscription-note h2 {
-    color: #004B3E; /* ירוק כהה ראשי */
+    color: #004B3E;
     font-size: 1.2rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -240,14 +241,12 @@ input[type="submit"]:hover {
     line-height: 1.5;
 }
 
-/* תמונות ורספונסיביות */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
 }
 
-/* בלוקים של כתבות */
 .article-card {
     display: flex;
     gap: 20px;
@@ -267,7 +266,6 @@ img {
     border-radius: 6px;
 }
 
-/* כפתורים וקישורים בכתבות */
 .read-more-btn {
     display: inline-block;
     margin-top: 10px;
@@ -278,7 +276,6 @@ img {
     border-radius: 4px;
 }
 
-/* פוטר */
 footer {
     background-color: #f8f9fa;
     text-align: center;
@@ -286,4 +283,178 @@ footer {
     border-top: 1px solid #dee2e6;
     margin-top: 20px;
     font-size: 14px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-right: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.articles-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.articles-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.articles-header h2 {
+    font-size: 1.8rem;
+    color: #4A2E1B;
+    margin-bottom: 8px;
+}
+
+.articles-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-card-main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.article-card-main img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.article-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.article-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    color: #4A2E1B;
+}
+
+.article-content p {
+    margin: 0 0 12px 0;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #5A3825;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #724932;
+    color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .article-card-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article-card-main img {
+        width: 100%;
+        height: 160px;
+    }
+}
+
+.article-single-page {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.article-single-page h2 {
+    color: #4A2E1B;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.article-author {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.article-img-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.article-single-page img {
+    max-width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.article-body-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.back-link {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.back-link a {
+    color: #5A3825;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .did-year-know, .did-you-know {
+        display: none !important;
+    }
 }
