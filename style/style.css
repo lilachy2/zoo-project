@@ -566,6 +566,12 @@ aside ul li {
     border: 4px solid #D9538A;
 }
 
+iframe{
+    width:100%;
+    height: 100%;
+    border-radius: 8px; 
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.15); */
+}
 
 @media not (hover: hover) {
     .card-toggle:checked+.animal-card .inner-card {
@@ -606,9 +612,7 @@ footer .footer-info {
     flex: 1;
 }
 
-footer .map-embed iframe {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
+
 
 @media (max-width: 768px) {
     footer .footer-content {
