@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גן החיות התנכי</title>
+    <link rel="icon" type="image/png" href="../images/icon.jpg">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/responcive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Secular+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="../images/logo.svg" alt="לוגו">
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a class="desktop-only" href="directions.html">דרכי הגעה</a></li>
+                <li><a href="articles.html">כתבות</a></li>
+                <li><a href="index.html#tickets"> רכישת כרטיסים</a></li>
+                <li><a href="index.html#worlds">עולמות הגן</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+        <main>
+            <section class="welcome">
+                <h2>ברוכים הבאים לגן החיות התנ"כי</h2>
+                <p>מוזמנים לסיור מרהיב בין מתחמי התנ"ך ובעלי החיים השונים.</p>
+
+                <section class="map">
+                    <h2>מפת גן החיות</h2>
+                    <p>מוזמנים לצפות במפה המלאה של גן החיות או להוריד אותה למכשיר שלכם:</p>
+
+                    <div class="desktop-pdf">
+                        <embed src="../images/JBZ map 2026.pdf" type="application/pdf" width="100%" height="500px"
+                            style="border-radius: 8px; border: 1px solid #ccc;" />
+                    </div>
+
+                    <div class="mobile-map-img">
+                        <img src="../images/zoo.png" alt="מפת גן החיות"
+                            style="width: 100%; border-radius: 8px; border: 1px solid #ccc;" />
+                    </div>
+
+                    <p>
+                        <a href="../images/JBZ map 2026.pdf" target="_blank" class="link">לחצו כאן לפתיחת המפה בחלון חדש
+                            / הורדה</a>
+                    </p>
+                </section>
+
+
+                <section id="worlds" class="worlds">
+                    <h2>עולמות הגן</h2>
+                    <p>בגן החיות התנ"כי בירושלים תוכלו להכיר את בעלי החיים השונים שחיים במתחמי הגן, וללמוד על בתי הגידול
+                        שלהם.</p>
+                    <div class="worlds-container">
+                        <a href="jungle.html" class="world-circle-card">
+                            <div class="world-circle jungle-border">
+                                <img src="../images/jungle-world.png" alt="ממלכת הג'ונגל">
+                            </div>
+                            <p>ממלכת הג'ונגל</p>
+                        </a>
+
+                        <a href="africa.html" class="world-circle-card">
+                            <div class="world-circle africa-border">
+                                <img src="../images/savana-world.png" alt="אפריקה הפראית">
+                            </div>
+                            <p>אפריקה הפראית</p>
+                        </a>
+
+                        <a href="birds.html" class="world-circle-card">
+                            <div class="world-circle birds-border">
+                                <img src="../images/birds-world.png" alt="עולם הציפורים והאגם">
+                            </div>
+                            <p>האגם ועולם הציפורים</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="price">
+                    <h3>טבלת מחירון והנחות</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>סוג כרטיס / מנוי</th>
+                                <th>מחיר</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>מבוגר</td>
+                                <td>60 ₪</td>
+                            </tr>
+                            <tr>
+                                <td>ילד (3-12)</td>
+                                <td>45 ₪</td>
+                            </tr>
+                            <tr>
+                                <td>מנוי שנתי (זוג + ילד)</td>
+                                <td>200 ₪ </td>
+                            </tr>
+                            <tr>
+                                <td>ילד נוסף במנוי</td>
+                                <td>50 ₪ </td>
+                            </tr>
+                            <tr>
+                                <td>סטודנט</td>
+                                <td>10% הנחה</td>
+                            </tr>
+                            <tr>
+                                <td>חייל בחובה</td>
+                                <td>15% הנחה</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="subscription-note">
+                        <h2>מעוניינים במנוי שנתי?</h2>
+                        <p>לרכישת מנויים שנתיים (בסיס זוג + ילד ב-200 ₪, או הוספת ילדים ב-50 ₪ לילד) יש ליצור קשר
+                            טלפוני
+                            ישירות
+                            עם מזכירות גן החיות.
+                        </p>
+                    </div>
+                </section>
+                <section id="tickets" class="tickets">
+                    <h2>הזמנת כרטיסים </h2>
+                    <p>מלאו את הפרטים ונציג מטעם המזכירות יחזור אליכם להשלמת ההזמנה.</p>
+
+                    <form action="#" method="POST" class="ticket-form">
+                        <section class="input-fields">
+                            <div class="grid-form">
+                                <label for="first-name">שם פרטי: <span class="required">*</span></label>
+                                <input type="text" id="first-name" name="first-name" placeholder="הכנס שם פרטי"
+                                    required>
+                            </div>
+                            <div class="grid-form">
+                                <label for="last-name">שם משפחה: <span class="required">*</span></label>
+                                <input type="text" id="last-name" name="last-name" placeholder="הכנס שם משפחה" required>
+                            </div>
+                            <div class="grid-form">
+                                <label for="phone">טלפון ליצירת קשר: <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="050-0000000" required>
+                            </div>
+                        </section>
+                        <label for="adult-count">כמות כרטיסי מבוגר (60 ₪):</label><br>
+                        <input type="number" id="adult-count" name="adult_count" value="0" min="0"><br><br>
+
+                        <label for="child-count">כמות כרטיסי ילד - גילאים 3-12 (45 ₪):</label><br>
+                        <input type="number" id="child-count" name="child_count" value="0" min="0"><br><br>
+
+                        <p class="section-title">הנחות זכאים (יותאמו מול המזכירות):</p>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="student" name="discount" value="student">
+                                <label for="student">סטודנט (10% הנחה)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="soldier" name="discount" value="soldier">
+                                <label for="soldier">חייל בחובה (15% הנחה)</label>
+                            </div>
+                        </div>
+                        <br>
+                        <input type="submit" value="הזמן כרטיסים">
+                    </form>
+                </section>
+                <section class="newsletter">
+                    <form action="#" method="POST">
+                        <p class="section-title">האם תרצה להירשם לניוזלייטר שלנו?</p>
+                        <label for="email">כתובת מייל (לניוזלייטר):</label><br>
+                        <input type="email" id="email" name="email" placeholder="example@email.com"><br><br>
+                        <input type="submit" value="רשום אותי">
+                    </form>
+                </section>
+        </main>
+
+        <aside>
+            <div class="did-you-know">
+                <h2> הידעת?</h2>
+                <ul>
+                    <li><strong>לשון הג'ירפה:</strong> האם ידעת שלג'ירפה יש לשון באורך של כ-50 סנטימטרים שבעזרתה היא
+                        תופסת
+                        עלים?</li>
+                    <li><strong>הפיל הזוכר:</strong> לפילים יש זיכרון יוצא דופן והם מסוגלים לזכור נתיבי נדידה ומקורות
+                        מים
+                        למשך עשרות שנים.</li>
+                    <li><strong>הפלמינגו הוורוד:</strong> פלמינגו נולדים עם נוצות בצבע אפור-לבן, והצבע הוורוד המפורסם
+                        שלהם
+                        מגיע מהאוכל שלהם (סרטנים ואצות).</li>
+                </ul>
+                <hr>
+            </div>
+
+            <h3>כתבות אחרונות</h3>
+
+            <a href="panda_article.html">
+                <div class="article-card">
+                    <img src="../images/panda.jpg" alt="פנדה">
+                    <h4>החיים הנסתרים של הפנדות</h4>
+                </div>
+            </a>
+
+            <a href="winter_article.html">
+                <div class="article-card">
+                    <img src="../images/bar_animals.jpg" alt="חיות בר בחורף">
+                    <h4>איך שומרים על חיות הבר בחורף?</h4>
+                </div>
+            </a>
+
+            <a href="predators_article.html">
+                <div class="article-card">
+                    <img src="../images/lions.jpg" alt="אריות וטורפים">
+                    <h4>מלכי הסוואה: הצצה לעולם הטורפים</h4>
+                </div>
+            </a>
+        </aside>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>גן החיות התנ"כי בירושלים | שעות פתיחה: ימים א'-ה' 09:00 - 17:00, שישי 09:00 - 14:00</p>
+                <p>כתובת: אהרון שולוב 1, ירושלים | <a class="link" href="directions.html">דרכי הגעה</a></p>
+                <section class="social-media">
+                    <a href="https://www.youtube.com/channel/UCDRyBNzTpx_hn_y7cL0fMlw?view_as=subscriber"
+                        target="_blank"><img src="../images/youtube.png" alt="לוגו יוטיוב"></a>
+                    <a href="https://www.instagram.com/jerusalem_zoo/" target="_blank"><img
+                            src="../images/instagram.png" alt="לוגו אינסטגרם"></a>
+                    <a href="https://www.tiktok.com/@jzoo_aqu" target="_blank"><img src="../images/tiktok.png"
+                            alt="לוגו טיקטוק"></a>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
