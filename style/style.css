@@ -613,30 +613,9 @@ footer .footer-info {
 }
 
 
-
-@media (max-width: 768px) {
-    footer .footer-content {
-        flex-direction: column-reverse; 
-        text-align: center;
-    }
-    footer .footer-info {
-        text-align: center;
-    }
-}
-
-
 .mobile-map-img {
     display: none;
 }
 .desktop-pdf {
     display: block;
-}
-
-@media (max-width: 768px) {
-    .desktop-pdf {
-        display: none !important;
-    }
-    .mobile-map-img {
-        display: block !important;
-    }
 }

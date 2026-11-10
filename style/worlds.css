@@ -69,7 +69,6 @@ body.world-page {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-
 }
 
 .animal-card:hover .inner-card {
@@ -122,14 +121,6 @@ body.world-page {
 .card-toggle {
     display: none;
 }
-
-.back-link-container {
-    position: fixed !important;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;
-}
-
 
 .close-btn {
     position: absolute;
